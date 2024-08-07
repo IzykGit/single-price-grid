@@ -13,3 +13,37 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+
+main {
+    border: 1px solid black;
+
+    width: 39.5rem;
+    height: 29.5rem;
+
+    border-radius: 0.5rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+main > section:nth-child(1) {
+    border: 1px solid green;
+
+    grid-column: 1 / span 2;
+    
+    padding: 2rem;
+}
+
+main > section:nth-child(2) {
+    border: 1px solid blue;
+
+    padding: 2rem;
+}
+
+main > section:nth-child(3) {
+    border: 1px solid red;
+
+    padding: 2rem;
+}
